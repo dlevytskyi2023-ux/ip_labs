@@ -1,0 +1,56 @@
+*{box-sizing:border-box}html{font-size:62.5%}body{margin:0;font:1.6rem/1.42857143 Roboto,Arial,sans-serif;color:#333}a{text-decoration:none;color:#0076a8}h1,h2{font-weight:500;line-height:1.1}h2{font-size:30px;margin:20px 0 10px}.container{padding:0 15px;margin:auto}.container-fluid{padding:0 15px;margin:auto}.row{margin:0 -15px}.row:after,.clearfix:after{content:"";display:table;clear:both}.col-xs-6{position:relative;float:left;width:50%;padding:0 15px}.form-group{margin-bottom:15px}.labnav{padding:15px}main,footer{padding-top:20px!important;padding-bottom:20px!important}@media(min-width:768px){.container{width:750px}.col-sm-3{width:25%}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}
+#hero{position:relative;background-position:center center !important;width:100% !important;background-size:cover !important;min-height:200px;background:rgb(46,49,146);}
+#hero .container{position:absolute;bottom:0;left:0;right:0;margin:auto}
+#hero .group-hero-project-dark{}
+.shadow{position:absolute;bottom:0;left:0;width:100%;background:linear-gradient(to bottom,rgba(46,49,146,0),rgba(46,49,146,1));}
+#hero h2{text-align:center;margin:0 0 2.4rem 0;font-size:2.2rem;}
+.shadow{min-height:120px;}
+#hero a{}
+#hero a:link{color:#fff;text-decoration:none;transition:color 3s ease-out;}
+#hero a:visited{color:#fff;text-decoration:none;transition:color 3s ease-out;}
+#hero a:hover{color:#00A1E4;text-decoration:none;transition:color 3s ease-out;}
+#hero a:active{color:#00A1E4;text-decoration:none;transition:color 3s ease-out;}
+#block-lpnushortcutstop4{background:rgb(46,49,146);}
+#block-lpnushortcutstop4:before{width:100%;content:"";height:2px;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0%,#2E3192),color-stop(50%,#fff),color-stop(100%,#2E3192));}
+#block-lpnushortcutstop4 .col-xs-6{position:relative;}
+#block-lpnushortcutstop4 h2{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+#block-lpnushortcutstop4 h2 span{}
+#block-lpnushortcutstop4 h2 svg{color:#00A1E4;margin-right:0.5rem;}
+.shortcut-1,.shortcut-4{background:#252775;}
+#block-lpnushortcutstop4 .alert-shortcut{color:#FFA8A8;}
+#block-lpnushortcutstop4 .alert-shortcut svg{color:#FFA8A8;}
+#block-lpnushortcutstop4 a:link{color:#fff;text-decoration:none;transition:color 3s ease-out;}
+#block-lpnushortcutstop4 a:visited{color:#fff;text-decoration:none;transition:color 3s ease-out;}
+#block-lpnushortcutstop4 a:hover{color:#00A1E4;text-decoration:none;transition:color 3s ease-out;}
+#block-lpnushortcutstop4 a:active{color:#00A1E4;text-decoration:none;transition:color 3s ease-out;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:104px;}
+#block-lpnushortcutstop4 h2{font-size:1.5rem;}
+@media only screen and (min-width :480px){#hero{min-height:300px;}
+.shadow{min-height:160px;}
+#hero h2{margin:0 0 3rem 0;font-size:3.4rem;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:106px;}
+#block-lpnushortcutstop4 h2{font-size:1.7rem;}}
+@media only screen and (min-width :768px){#hero{min-height:400px;margin-top:-55px;border-top:1px solid rgb(46,49,146);}
+#hero.group-hero-project{margin-top:-58px;}
+.shadow{min-height:215px;}
+#hero h2{font-size:4rem;margin:0 0 3rem 0;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:110px;}
+#block-lpnushortcutstop4 h2{font-size:1.5rem;}
+.shortcut-1,.shortcut-3{background:none;}
+.shortcut-2,.shortcut-4{background:#252775;}}
+@media only screen and (min-width :992px){#hero{min-height:500px;}
+.shadow{min-height:270px;}
+#hero h2{margin:0 0 4rem 0;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:124px;}
+#block-lpnushortcutstop4 h2{font-size:1.8rem;}}
+@media only screen and (min-width :1200px){#hero{min-height:550px;}
+.shadow{min-height:295px;}
+#hero h2{font-size:5rem;margin:0 0 5rem 0;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:134px;}
+#block-lpnushortcutstop4 h2{font-size:2.1rem;}}
+@media only screen and (min-width :1600px){#hero{min-height:650px;}
+.shadow{min-height:350px;}
+#hero h2{margin:0 0 6.5rem 0;}
+#block-lpnushortcutstop4 .col-xs-6{min-height:120px;}
+#block-lpnushortcutstop4 h2{font-size:2.2rem;}}
+#hero{margin-top:0}#block-lpnushortcutstop4 i{color:#00a1e4;margin-right:.5rem}
