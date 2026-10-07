@@ -1,26 +1,92 @@
 <!doctype html>
 <html lang="uk">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Анкета студента</title><link rel="stylesheet" href="../styles.css"></head>
-<body><header><a href="../index.html">← Лабораторні роботи</a><h1>Анкета студента</h1></header>
-<main><form action="" method="post" enctype="multipart/form-data" id="survey">
-<section><fieldset><legend>Особисті відомості</legend>
-<label for="name">Full Name</label><input id="name" name="full_name" type="text" required minlength="2" maxlength="100" autocomplete="name">
-<label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email">
-<label for="password">Password</label><input id="password" name="password" type="password" required minlength="8" autocomplete="new-password">
-<label for="age">Age</label><input id="age" name="age" type="number" min="14" max="100" required>
-<label for="birth">Date of Birth</label><input id="birth" name="birth" type="date" required>
-<fieldset><legend>Gender</legend><label><input type="radio" name="gender" value="male" required> Male</label><label><input type="radio" name="gender" value="female"> Female</label><label><input type="radio" name="gender" value="other"> Other</label></fieldset>
-<label for="country">Country</label><select id="country" name="country" required><option value="">Choose country</option><option>Ukraine</option><option>Poland</option><option>Spain</option><option>France</option><option>Other</option></select>
-</fieldset></section>
-<section><fieldset><legend>Навчання та навички</legend>
-<fieldset><legend>Languages Known</legend><label><input type="checkbox" name="languages" value="English"> English</label><label><input type="checkbox" name="languages" value="Spanish"> Spanish</label><label><input type="checkbox" name="languages" value="French"> French</label></fieldset>
-<label for="subjects">College Subjects (Ctrl / Cmd для кількох)</label><select id="subjects" name="subjects" multiple size="5"><option>Mathematics</option><option>Computer Science</option><option>Physics</option><option>Chemistry</option><option>English</option></select>
-<label for="interest">Rate Interest in Computer Science</label><input id="interest" name="interest" type="range" min="0" max="10" value="5"><output for="interest" id="rating">5 / 10</output>
-<label for="skills">Describe Skills</label><textarea id="skills" name="skills" rows="5" maxlength="2000"></textarea>
-<label for="resume">Upload Resume</label><input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.txt">
-<label for="color">Pick Favorite Color</label><input id="color" name="color" type="color" value="#2563eb">
-<label for="time">Preferred Study Time</label><input id="time" name="study_time" type="time">
-</fieldset></section><input type="submit" value="Submit Survey"><button type="reset">Очистити</button><p id="result" role="status"></p>
-</form></main><footer>Навчальна демонстрація HTML-форм. Дані не зберігаються.</footer>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Анкета студента</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+<a href="../index.html">← Лабораторні роботи</a>
+<h1>Анкета студента</h1>
+</header>
+<main>
+<form action="" method="post" enctype="multipart/form-data" id="survey">
+<section>
+<fieldset>
+<legend>Особисті відомості</legend>
+<label for="name">Full Name</label>
+<input id="name" name="full_name" type="text" required minlength="2" maxlength="100" autocomplete="name">
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required autocomplete="email">
+<label for="password">Password</label>
+<input id="password" name="password" type="password" required minlength="8" autocomplete="new-password">
+<label for="age">Age</label>
+<input id="age" name="age" type="number" min="14" max="100" required>
+<label for="birth">Date of Birth</label>
+<input id="birth" name="birth" type="date" required>
+<fieldset>
+<legend>Gender</legend>
+<label>
+<input type="radio" name="gender" value="male" required> Male</label>
+<label>
+<input type="radio" name="gender" value="female"> Female</label>
+<label>
+<input type="radio" name="gender" value="other"> Other</label>
+</fieldset>
+<label for="country">Country</label>
+<select id="country" name="country" required>
+<option value="">Choose country</option>
+<option>Ukraine</option>
+<option>Poland</option>
+<option>Spain</option>
+<option>France</option>
+<option>Other</option>
+</select>
+</fieldset>
+</section>
+<section>
+<fieldset>
+<legend>Навчання та навички</legend>
+<fieldset>
+<legend>Languages Known</legend>
+<label>
+<input type="checkbox" name="languages" value="English"> English</label>
+<label>
+<input type="checkbox" name="languages" value="Spanish"> Spanish</label>
+<label>
+<input type="checkbox" name="languages" value="French"> French</label>
+</fieldset>
+<label for="subjects">College Subjects (Ctrl / Cmd для кількох)</label>
+<select id="subjects" name="subjects" multiple size="5">
+<option>Mathematics</option>
+<option>Computer Science</option>
+<option>Physics</option>
+<option>Chemistry</option>
+<option>English</option>
+</select>
+<label for="interest">Rate Interest in Computer Science</label>
+<input id="interest" name="interest" type="range" min="0" max="10" value="5">
+<output for="interest" id="rating">5 / 10</output>
+<label for="skills">Describe Skills</label>
+<textarea id="skills" name="skills" rows="5" maxlength="2000">
+</textarea>
+<label for="resume">Upload Resume</label>
+<input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.txt">
+<label for="color">Pick Favorite Color</label>
+<input id="color" name="color" type="color" value="#2563eb">
+<label for="time">Preferred Study Time</label>
+<input id="time" name="study_time" type="time">
+</fieldset>
+</section>
+<input type="submit" value="Submit Survey">
+<button type="reset">Очистити</button>
+<p id="result" role="status">
+</p>
+</form>
+</main>
+<footer>Навчальна демонстрація HTML-форм. Дані не зберігаються.</footer>
 <script>const form=document.querySelector('#survey');const range=document.querySelector('#interest');range.addEventListener('input',()=>document.querySelector('#rating').value=range.value+' / 10');form.addEventListener('submit',event=>{event.preventDefault();document.querySelector('#result').textContent='Валідація пройдена. Для передавання анкети потрібен серверний обробник.';});form.addEventListener('reset',()=>{document.querySelector('#result').textContent='';document.querySelector('#rating').value='5 / 10';});</script>
-</body></html>
+</body>
+</html>
