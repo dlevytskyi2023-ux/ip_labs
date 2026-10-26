@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    position: sticky;
+    top: 100px;
+    background: #f9f9f9;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Секція 1 */
+#section-1 img {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Секція 2 */
+.multicolumn-text {
+    column-width: 300px;
+    column-gap: 20px;
+ column-count: 2; /* Не більше двох колонок */
+}
+
+
+/* Секція 3 */
+#subscribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#subscribe-button:hover {
+    background-color: #45a049;
+}
+
+/* Модальне вікно */
+#modal.hidden {
+    display: none;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: white;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Доступність та адаптація до вузьких екранів */
+html { scroll-padding-top: 160px; }
+header { box-sizing: border-box; height: 100px; }
+header h1 { margin: 20px 0; }
+main { display: block; }
+.modal-content { position: relative; box-sizing: border-box; overflow: auto; }
+#close-modal { position: absolute; top: 8px; right: 8px; cursor: pointer; }
+body.modal-open { overflow: hidden; }
+:focus-visible { outline: 3px solid #163d91; outline-offset: 3px; }
+@media (max-width: 640px) {
+  header h1 { font-size: 1.4rem; }
+  .multicolumn-text { column-count: 1; }
+  #section-1 img { width: 150px; height: 150px; }
+  .modal-content { width: 90%; height: auto; min-height: 240px; max-height: 90%; }
+  input[type="email"] { width: 100%; }
+}
